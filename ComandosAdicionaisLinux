@@ -32,6 +32,13 @@ Desliga o computador
 Sequência de números
 * seq 1 10
 
+## Usuário
+
+su [nome do usuário]: Troca para este usuário
+adduser [nome do usuário]: Adiciona um usuário
+
+Se não possuir permissão, adicionar 'sudo' antes dos comandos: sudo su, sudo adduser
+
 ## ls -lh
 
 Verifica as permissões do diretório

@@ -20,7 +20,8 @@ São as linguagens usadas pelos dispositivos de uma rede de modo que eles consig
 entre nós.
 
 * DNS (Domain Name Server): Esse protocolo de aplicação tem por função identificar endereços IPs e manter 
-uma tabela com os endereços dos caminhos de algumas redes.
+uma tabela com os endereços dos caminhos de algumas redes. Dá nome aos IPs (transforma em sites).
+Ex: Transforma 216.58.202.132 em www.google.com
 
 ## Interface de Rede
 
@@ -32,4 +33,35 @@ pelos softwares quando são requisitadas.
 * A interface loopback é um tipo especial de interface que permite fazer conexões com você mesmo, com ela, 
 você pode testar vários programas de rede sem interferir em sua rede padrão. O endereço IP 127.0.0.1 foi 
 escolhido para loopback.
+
+
+## Comandos
+
+### hostname
+
+Nome do computador na rede.
+
+### hostname -I
+
+Endereço IP
+
+### ping
+
+Verifica se o host está ativo ou inativo. Faz parte do Protocolo ICMP.
+* ping www.google.com -w 4: Envia 4 pacotes
+
+### dig
+
+Traz informações sobre DNS
+* dig www.google.com
+* dig www.google.com +short: Traz somente o IP
+
+### whois
+
+* whois [site]: Traz informações do site
+
+### traceroute
+
+Exibe informações sobre a rota da sua rede até o host desejado
+* traceroute www.google.com
 

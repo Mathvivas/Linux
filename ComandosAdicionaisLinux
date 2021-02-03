@@ -32,3 +32,31 @@ Desliga o computador
 Sequência de números
 * seq 1 10
 
+## ls -lh
+
+Verifica as permissões do diretório
+r: read; w: write; x: execution
+
+* Primeiro Símbolo: d (diretório), - (arquivo)
+* Segundo ao Quarto Símbolo: Permissões do dono
+* Quinto ao Sétimo Símbolo: Permissões do grupo
+* Oitavo ao Décimo Símbolo: Permissões para outros
+
+## chmod
+
+* Modo Octal: 0 (nenhuma permissão) a 7 (permissão total)
+* Mudar a permissão de um arquivo ou diretório
+* O primeiro dígito representa o dono (u)
+* O segundo dígito representa o grupo (g)
+* O terceiro dígito representa os outros (o)
+
+read = 4
+write = 2
+execute = 1
+
+* chmod 200 [arquivo]: Somente o dono pode escrever no arquivo
+* chmod 300 [arquivo]: Somente o dono pode escrever e executar (2 + 1) no arquivo
+* chmod 700 [arquivo]: Somente o dono possui todas as permissões
+* chmod 754 [arquivo]: Dono possui todas as permissõs; Grupo pode ler e executar; Outros podem ler
+
+

@@ -58,5 +58,7 @@ git commit -m "[comentário]" --> git commit -m "Criação do arquivo hello.py"
 
 git push --> Envia os commits para o Git
 
+git add ./ --> Add o diretório atual
+
 Problemas --> git pull origin master
 

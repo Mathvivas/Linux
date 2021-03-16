@@ -14,9 +14,14 @@ fácil de instalação de pacotes.
 
 ## apt
 
-- sudo apt install pacote
-- sudo apt upgrade pacote
-- sudo apt remove pacote
+- Gerencia, busca pacotes
+
+- sudo apt-get install pacote
+- sudo apt-get upgrade pacote
+- sudo apt-get remove pacote
+
+- apt-cache search pacote
+  - Obtém informações sobre o pacote
 
 ## Extensão .deb
 

@@ -17,3 +17,5 @@
 - Tanenbaum criou o Minix, um sistema educativo para que pudesse ensinar os seus alunos;
 - Linus, baseado no Unix, criou o Kernel Linux, um terminal (bash) e disponibilizou para que as pessoas pudessem contribuir;
 - Isso permitiu que diversas empresas e pessoas pudessem redistribui suas próprias versões (Licença GPL);
+- O Ubuntu (mantido por uma empresa) é baseado no Debian, que é mantido pela comunidade;
+- Red Hat: Foco são servidores e ambientes de trabalho, suporte técnico para empresas;

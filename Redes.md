@@ -35,7 +35,11 @@ você pode testar vários programas de rede sem interferir em sua rede padrão. 
 escolhido para loopback.
 
 
-## Comandos
+## DNS
+
+- Domain Name Service.
+
+# Comandos
 
 ### hostname
 

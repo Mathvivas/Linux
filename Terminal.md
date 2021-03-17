@@ -150,3 +150,12 @@ M = Alt
 
 - Limpa o terminal
 
+___________________
+
+<br>
+
+## Shell
+
+- <strong>Bash</strong> é o interpretador <strong>shell</strong> mais famoso;
+  
+- Outros exemplos são: csh e sh

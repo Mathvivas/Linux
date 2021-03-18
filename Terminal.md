@@ -43,6 +43,10 @@
 - rm <i>arquivo</i>: Remove o arquivo.
 - rm -r <i>diretório</i>: Remove o diretório.
 
+## whereis
+
+- Retorna o caminho até o arquivo.
+
 ## nano
 
 - nano <i>arquivo</i>: Edita o arquivo no próprio Shell.

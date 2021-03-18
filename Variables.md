@@ -79,3 +79,11 @@ PS1='\u@\w: '
 echo 'teste teste teste
 > teste teste'
 ```
+
+## PATH
+
+- Quando executamos um comando, o executável desse comando será procurado nos diretórios definidos no valor dessa variável;
+
+- A ordem dos diretórios importa;
+
+- Comandos internos do shell (shell builtin) possuem preferência de execução.

@@ -126,6 +126,12 @@ M = Alt
 
 - echo -e "---Informações de Hardware---\n": Printa essa string (com a quebra de linha) no terminal.
 
+## type
+
+- type comando;
+- type -t comando
+  - Mostra somente a palavra que descreve.
+
 ## !!
 
 - Executa o último comando utilizado.

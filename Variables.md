@@ -56,3 +56,26 @@ Resulta em: Matheus
 export -n VARIAVEL
 unset VARIAVEL
 ```
+
+______________
+
+## PS1
+
+- PS1 Linux configuration;
+- Substitui o <strong>usuario@nome_do_computador</strong> pelo valor indicado;
+- \u indica o usuário;
+- \w indica o diretório.
+
+```bash
+PS1='$ '
+PS1='\u@\w: '
+```
+
+## PS2
+
+- Indicador de quebra de linha (>).
+
+```bash
+echo 'teste teste teste
+> teste teste'
+```

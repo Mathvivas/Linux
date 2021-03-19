@@ -160,6 +160,39 @@ M = Alt
 
 - Limpa o terminal
 
+## echo $?
+
+- Diz qual foi o resultado do último comando;
+- 0: Tudo certo;
+- 1: Erros no geral;
+- 127: Comando não encontrado;
+- 130: Script terminado por Ctrl-C
+
+## *
+
+- Tendo vários arquivos de texto:
+  - cat *.txt
+  - ls *.txt
+
+## ?
+
+- ? pega <strong>somente</strong> um caractér ou número;
+- Tendo vários arquivos textoN.txt, onde N é um número:
+  - cat texto?.txt
+  - Se N >= 10, não é selecionado, pois possui 2 números e o "?" pega somente 1.
+  - cat texto[0-5].txt: Retorna os texto0.txt ao texto5.txt;
+  - cat {texto[a-z].txt, texto[A-Z].txt}: Pega os dois padrões.
+
+## ;
+
+- Possibilidade de executar vários comandos
+
+```bash
+ls ; echo 'Listagem Completa'
+
+echo 'Minha mensagem' ; echo 'Minha outra mensagem'
+```
+
 ___________________
 
 <br>

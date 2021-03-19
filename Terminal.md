@@ -9,6 +9,9 @@
 - ls: Lista o que tem dentro da pasta atual.
 - ls <i>diretório</i>: Lista o que tem dentro do diretório.
 - ls -l: Lista os detalhes dos diretórios.
+- ls -F : Mostra os arquivos e diretórios de uma forma visual, não por cores.
+- ls --sort=size : Lista pelo tamanho dos arquivos.
+- ls * : lista o conteúdo de todos os diretórios dentro do diretório atual.
 
 ## cd
 
@@ -16,10 +19,12 @@
 - cd .. : Retorna para o diretório anterior.
 - cd ~: Retorna para o diretório pessoal.
 - cd /: Entra no diretório raiz.
+- Ao digitar cd sem argumentos, retornamos ao diretório home do usuário.
 
 ## mkdir
 
 - mkdir <i>diretório</i>: Cria um diretório.
+- mkdir -p diretório1/diretório2/diretório3 : Cria todos os diretórios, se não existirem.
 
 ## man
 

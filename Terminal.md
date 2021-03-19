@@ -23,7 +23,23 @@
 
 ## man
 
-- man <i>comando</i>: Gera o manual do comando.
+- man <i>comando</i>: Gera o manual do comando;
+- Na tela do Manual:
+  - /Comando: Busca o comando desejado;
+  - 'n' para passar pelas buscas.
+
+## less
+
+- Visualizador de arquivos, semelhante ao man;
+- less arquivo.txt.
+
+## locate
+
+- locate arquivo;
+- Procura pelo sistema de arquivos inteiro;
+- <strong>Possui um banco de dados próprio com todos os arquivos.</strong> Gera uma busca rápida.
+- Após criar ou remover um arquivo, é necessário atualizar o banco de dados:
+  - sudo updatedb.
 
 ## mv
 

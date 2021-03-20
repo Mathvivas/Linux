@@ -6,60 +6,70 @@
 
 - Identificam o tipo de um arquivo e o programa necessário para manipular o mesmo.
 
-## Compactadores
+# Compactadores
 
-### gzip
+## gzip
 
 - Muito usado, possui uma taxa excelente de compactação.
 
 - gzip arquivo.txt
 - gzip -9 arquivo.txt: Usa a compactação máxima; Usar para arquivos enormes
 
-### zip
+## zip
 
 - zip arquivo.zip arquivo.txt
 - zip arquivos.zip arquivo1.txt arquivo2.txt ...
 
-### bzip2
+## bzip2
 
 - bzip2 arquivo.txt
 
-### rar
+## rar
 
 - rar a arquivo.rar arquivo.txt
 
 
 
-## Descompactação
+# Descompactação
 
-### gunzip
+## gunzip
 
 - gunzip arquivo.txt.gz
 
-### unzip
+## unzip
 
 - unzip arquivo.zip
 
-### bzip2
+## bzip2
 
 - bzip2 -d arquivo.bz2
 
-### rar
+## rar
 
 - rar x arquivo.rar
 
-### tar.gz
+## tar.gz
 
 - tar -xvf arquivos.txt.tar.gz
 
 
 
-## Arquivadores
+# Arquivadores
 
 - Junta vários arquivos em um só, mas pode ser usado em conjunto com um compactador para
 armazenar arquivos compactados.
 
-### tar
+## tar
 
 - tar -cf arquivos.txt.tar arquivo1.txt arquivo2.txt ...
+- tar -tf arquivo.tar : Lista o conteúdo arquivado.
 
+- Para comprimir com gzip:
+```bash
+tar -czvf arquivo.tar.gz arquivo1.txt arquivo2.txt ...
+```
+
+- Para comprimir com bzip2:
+```bash
+tar -cjvf arquivo.tar.bz arquivo1.txt arquivo2.txt ...
+```

@@ -38,6 +38,32 @@
 - Visualizador de arquivos, semelhante ao man;
 - less arquivo.txt.
 
+## find
+
+- Procura tudo o que está em certo diretório:
+  - find /Documents
+- Para procurar pelo nome:
+  - find -name "log*" : Tudo que começa com log
+  - find -name "*g\*" : Tudo que tem g no meio
+- Para achar somente diretórios:
+  - find -type d -name "*user\*"
+- Para achar somente arquivos:
+  - find -type f -name "*user\*"
+- Para achar pelo tamanho de pelo menos 1000k:
+  - find -size +1000k
+- Para achar os arquivos que foram acessados nos últimos 7 dias:
+  - find -atime -7
+- Para achar os arquivos que foram modificados nos últimos 7 dias:
+  - find -mtime -7
+- Para achar arquivos com OR (por padrão, é AND):
+  - find -name "*log\*" -o -name "2016\*"
+- Para achar arquivos que tenham log e não tenham 2016:
+  - find -namee "*log\*" ! -name "*2016\*"
+- Para ignorar maiúsculo e minúsculo:
+  - find -iname
+- Para executar outro comando para CADA resultado:
+  - find -name "*log\*" -name "*2016\*" -exec echo '{}' foi encontrado ";"
+
 ## locate
 
 - locate arquivo;

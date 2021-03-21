@@ -19,6 +19,8 @@
 
 - zip arquivo.zip arquivo.txt
 - zip arquivos.zip arquivo1.txt arquivo2.txt ...
+- Para zippar todos os arquivos de um diretório:
+  - zip -r arquivo.zip *
 
 ## bzip2
 
@@ -35,6 +37,8 @@
 ## gunzip
 
 - gunzip arquivo.txt.gz
+- Para redirecionar a compressão para um arquivo:
+    - gzip -c arquivo.txt > arquivo.txt.bz
 
 ## unzip
 

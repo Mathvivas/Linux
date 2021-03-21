@@ -111,3 +111,18 @@ do
 done
 ```
 
+## Editores de Texto
+
+### vi
+
+- vi <i>arquivo.extensão</i> : Cria o arquivo
+- Após entrar no editor vi: 
+  - digitar :set number para numerar as linhas
+  - :wq para Salvar e sair do vi
+
+### nano
+
+- nano <i>arquivo</i>: Edita o arquivo no próprio Shell.
+- ^ = Ctrl
+- M = Alt
+- Ctrl ^ = Seleciona uma palavra

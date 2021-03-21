@@ -94,12 +94,6 @@
 
 - Retorna o caminho até o arquivo.
 
-## nano
-
-- nano <i>arquivo</i>: Edita o arquivo no próprio Shell.
-^ = Ctrl
-M = Alt
-
 ## cat
 
 - cat <i>arquivo</i>: Lê o arquivo.
@@ -123,13 +117,6 @@ M = Alt
 ## chmod
 
 - chmod +x <i>arquivo.extensão</i> : Torna o arquivo executável
-
-## vi
-
-- vi <i>arquivo.extensão</i> : Cria o arquivo
-- Após entrar no editor vi: 
-  - digitar :set number para numerar as linhas
-  - :wq para Salvar e sair do vi
 
 ## > e >>
 

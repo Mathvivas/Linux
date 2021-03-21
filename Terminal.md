@@ -106,6 +106,19 @@ M = Alt
 - tac <i>arquivo</i>: Lê o arquivo de baixo para cima.
 - head <i>arquivo</i>: Lê as 10 primeiras linhas do arquivo.
 - tail <i>arquivo</i>: Lê as 10 últimas linhas do arquivo.
+- Concatenar arquivos:
+  - cat arquivo.txt arquivo2.txt
+
+## sort
+
+- Ordena o conteúdo dos arquivos
+- sort arquivo.txt
+- Para ordenar pelo terceiro campo de um arquivo que está separado por ":"
+  - sort -k 3 -t:
+- Para ordenar pro campos ÚNICOS:
+  - sort -u
+- Para redirecionar o resultado:
+  - sort -o
 
 ## chmod
 
@@ -120,10 +133,12 @@ M = Alt
 
 ## > e >>
 
+- Redirecionamento;
 - '>' : Substitui.
 - '>>' : Adiciona.
 - tail arquivo.txt > teste.txt: Copia as úlimas 10 linhas do arquivo.txt no teste.txt.
 - cal maio 2020 > maio.txt
+- ls >> arquivo.txt
 
 ## cal
 
@@ -135,9 +150,52 @@ M = Alt
 
 - Mostra o data
 
-## | (pipe) e grep
+## grep
 
+- Procura palavras em um arquivo:
+  - grep SQL arquivo.txt
+- Mostra a linha das ocorrências:
+  - grep -n SQL arquivo.txt
+- Ignora maiúsculo e minúsculo:
+  - grep -i sql arquivo.txt
+- Mostra qualquer caracter:
+  - grep 201. arquivo.txt
+- Mostra somente os caracteres desejados:
+  - grep '201[56]' arquivo.txt
+  - grep '201[5-9]' arquivos.txt
+- Para pegar vários (+) dígitos antes de uma vírgula e pegar zero ou mais (*) dígitos depois de uma vírgula , sendo a vírgula opcional (?):
+
+```bash
+grep '[[:digit:]]\+,\?[[:digit:]]*' arquivo.txt
+```
+- Procurar em diversos arquivos:
+  - grep sql arquivo.txt arquivo2.txt
+
+## | (pipe)
+
+- Executa uma ação e depois executa outra.
 - tail arquivo.txt | grep <i>palavra</i>: Procura a 'palavra' no arquivo.txt.
+- cat arquivo.txt | wc : Executa o wc depois do cat
+- ls -la arquivo.txt | less
+
+## cut
+
+- Corta arquivos;
+- Corta do primeiro até o quarto e do décimo quinto até o vigésimo do arquivo:
+  - cut -c 1-4, 15-20 arquivo.txt
+- Para separar as saídas com um certo delimitador: 
+  - cut -c 1-4, 15-20 --output-delimiter="-" arquivo.txt
+- Para cortar por campos (separados por :) e pegar o primeiro campo:
+  - cut -f 1 -d: arquivo.txt
+- Para pegar o primeiro e o quinto:
+  - cut -f 1,5 -d: arquivo.txt
+
+## paste
+
+- Colar dois arquivos:
+  - paste arquivo2.txt arquivo1.txt
+- Delimitador:
+  - paste -d: arquivo2.txt arquivo1.txt
 
 ## & e &&
 

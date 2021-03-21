@@ -4,6 +4,10 @@
 * wc -w [arquivo]: Número de palavras do arquivo
 * wc -c [arquivo]: Número de bytes do arquivo
 * wc -m [arquivo]: Número de chars do arquivo
+- Somente wc:
+  - Primeiro número: linhas
+  - Segundo número: palavras
+  - Terceiro número: bytes
 
 ## cowsay
 
@@ -66,4 +70,11 @@ execute = 1
 * chmod 700 [arquivo]: Somente o dono possui todas as permissões
 * chmod 754 [arquivo]: Dono possui todas as permissõs; Grupo pode ler e executar; Outros podem ler
 
+## read
+
+```bash
+read IDADE
+22
+echo $IDADE
+```
 

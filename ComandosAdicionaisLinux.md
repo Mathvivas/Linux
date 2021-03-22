@@ -38,15 +38,27 @@ Sequência de números
 
 ## Usuário
 
-su [nome do usuário]: Troca para este usuário
-adduser [nome do usuário]: Adiciona um usuário
+- su nome_do_usuário : Troca para este usuário
+- useradd -m nome_do_usuário : Adiciona um usuário com o próprio diretório
 
-Se não possuir permissão, adicionar 'sudo' antes dos comandos: sudo su, sudo adduser
+- Se não possuir permissão, adicionar 'sudo' antes dos comandos: sudo su, sudo adduser
+
+```bash
+sudo userdel -r user     # Remove o user e o diretório home
+```
+
+### Mudar Senha
+
+```bash
+passwd    # Muda a própria senha
+
+sudo passwd user   # Muda a senha do user
+```
 
 ## ls -lh
 
-Verifica as permissões do diretório
-r: read; w: write; x: execution
+- Verifica as permissões do diretório
+  - r: read; w: write; x: execution
 
 * Primeiro Símbolo: d (diretório), - (arquivo)
 * Segundo ao Quarto Símbolo: Permissões do dono
@@ -61,14 +73,55 @@ r: read; w: write; x: execution
 * O segundo dígito representa o grupo (g)
 * O terceiro dígito representa os outros (o)
 
-read = 4
-write = 2
-execute = 1
+<strong>
 
-* chmod 200 [arquivo]: Somente o dono pode escrever no arquivo
-* chmod 300 [arquivo]: Somente o dono pode escrever e executar (2 + 1) no arquivo
-* chmod 700 [arquivo]: Somente o dono possui todas as permissões
-* chmod 754 [arquivo]: Dono possui todas as permissõs; Grupo pode ler e executar; Outros podem ler
+- read = 4
+  
+- write = 2
+
+- execute = 1
+  
+</strong>
+
+```bash
+chmod 200 arquivo   # Somente o dono pode escrever no arquivo
+chmod 300 arquivo   # Somente o dono pode escrever e executar (2 + 1) no arquivo
+chmod 700 arquivo   # Somente o dono possui todas as permissões
+chmod 754 arquivo   # Dono possui todas as permissõs; Grupo pode ler e executar; Outros podem ler
+
+chmod +t diretorio/     # Garante que somente o usuário que criou o arquivo dentro do diretório, consegue deletá-lo
+```
+
+### Outro Modo de Dar Permissões
+
+```bash
+chmod u+rwx    # Usuário (u: padrão), permissão de escrita, leitura e execução
+
+chmod o-rwx    # Outros (o), tira a permissão de tudo
+
+# Para diretórios
+
+chmod -R o+w Documents
+```
+
+## chown
+
+- Muda o dono do arquivo ou diretório.
+```bash
+sudo chown new_owner arquivo.txt
+```
+
+## group
+
+```bash
+sudo groupadd novo_grupo
+
+sudo usermod -a -G novo_grupo user    # Adiciona o user ao novo_grupo
+```
+
+```bash
+id user     # Mostra os grupos do user
+```
 
 ## read
 

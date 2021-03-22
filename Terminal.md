@@ -114,6 +114,29 @@
 - Para redirecionar o resultado:
   - sort -o
 
+## ps
+
+- Comando que lista processos em execução;
+
+```bash
+ps -ef  # Lista todos os processos no momento, com infos extras
+```
+- PPID : Processo pai que inicializou o processo filho.
+
+## top
+
+```bash
+top -u usuario    # Mostra somente os processos do usuário
+```
+
+## kill
+
+```bash
+ps -ef  # Lista o PID do processo
+
+kill PID    # Mata o processo pelo ID
+```
+
 ## chmod
 
 - chmod +x <i>arquivo.extensão</i> : Torna o arquivo executável
